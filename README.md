@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# Expense Tracker 💰
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React application for tracking personal expenses.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+* Add new expenses
+* Filter expenses by year
+* Display expense title, date, and price
+* Automatic list updates using React State
+* Form validation
+* Reusable UI components
+* Well-commented codebase for learning React fundamentals
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* React 18
+* JavaScript (ES6+)
+* CSS3
+* Create React App
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+```text
+src/
+├── components/
+│   ├── expenses/
+│   │   ├── Expenses.jsx
+│   │   ├── ExpenseItem.jsx
+│   │   ├── ExpenseDate.jsx
+│   │   └── ExpensesFilter.jsx
+│   │
+│   ├── newExpenses/
+│   │   ├── NewExpenses.jsx
+│   │   └── ExpenseForm.jsx
+│   │
+│   └── ui/
+│       ├── Card.jsx
+│       └── Button.jsx
+│
+├── App.jsx
+└── index.js
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone https://github.com/your-username/expense-tracker.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Navigate to the project directory:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+cd expense-tracker
+```
 
-### `npm run eject`
+Install dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Start the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The application will be available at:
 
-## Learn More
+```text
+http://localhost:3000
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## How It Works
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. The application starts with several predefined expenses.
+2. Users can add new expenses through a form.
+3. Each expense contains:
 
-### Code Splitting
+   * Title
+   * Price
+   * Date
+4. Expenses are stored in React state.
+5. Users can filter expenses by year using a dropdown menu.
+6. The interface updates automatically whenever data changes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Learning Objectives
 
-### Analyzing the Bundle Size
+This project demonstrates:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* React Components
+* Props
+* State Management with `useState`
+* Derived Data
+* Event Handling
+* Controlled Forms
+* Conditional Rendering
+* List Rendering with `map`
+* Basic Component Reusability
 
-### Making a Progressive Web App
+## Future Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* Edit existing expenses
+* Delete expenses
+* Expense charts and analytics
+* Local Storage support
+* Backend integration
+* User authentication
+* Responsive mobile design
 
-### Advanced Configuration
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Created as a React learning project focused on understanding component architecture, state management, and form handling.
